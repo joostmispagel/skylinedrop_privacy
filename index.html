@@ -16,9 +16,11 @@
   h1 { font-size: 1.8rem; margin: 0 0 4px; }
   h2 { font-size: 1.15rem; margin: 28px 0 6px; }
   .muted { color: var(--muted); }
-  nav a { color: var(--accent); margin-right: 16px; font-weight: 600; }
+  nav { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+  nav a { color: var(--accent); font-weight: 600; }
   section.lang { background: var(--card); border: 1px solid var(--line);
-                 border-radius: 16px; padding: 8px 24px 20px; margin-top: 24px; }
+                 border-radius: 16px; padding: 8px 24px 20px; margin-top: 24px;
+                 scroll-margin-top: 16px; }
   ul { padding-left: 20px; }
   li { margin: 4px 0; }
   a { color: var(--accent); overflow-wrap: anywhere; }
@@ -28,8 +30,8 @@
 <body>
 <main>
   <h1>Skyline Drop</h1>
-  <p class="muted">Datenschutzerklärung · Privacy Policy</p>
-  <nav><a href="#de">Deutsch</a><a href="#en">English</a></nav>
+  <p class="muted">Datenschutzerklärung und Impressum · Privacy Policy and Imprint</p>
+  <nav><a href="#de">Datenschutz</a><a href="#impressum">Impressum</a><a href="#en">Privacy (English)</a><a href="#imprint">Imprint</a></nav>
 
   <!-- ===================================================== DEUTSCH -->
   <section class="lang" id="de" lang="de">
@@ -38,6 +40,8 @@
 
     <h2>Verantwortlicher</h2>
     <p>Joost Mispagel<br>
+    Lachnerstraße 11<br>
+    76131 Karlsruhe, Deutschland<br>
     E-Mail: <a href="mailto:joost.mispagel@gmail.com">joost.mispagel@gmail.com</a></p>
 
     <h2>Kurz gesagt</h2>
@@ -115,6 +119,22 @@
     wird diese Erklärung vorher angepasst.</p>
   </section>
 
+  <section class="lang" id="impressum" lang="de">
+    <h2>Impressum</h2>
+    <p class="muted">Angaben gemäß § 5 DDG</p>
+    <p>Joost Mispagel<br>
+    Lachnerstraße 11<br>
+    76131 Karlsruhe<br>
+    Deutschland</p>
+
+    <h2>Kontakt</h2>
+    <p>E-Mail: <a href="mailto:joost.mispagel@gmail.com">joost.mispagel@gmail.com</a></p>
+
+    <h2>Verbraucherstreitbeilegung</h2>
+    <p>Ich bin nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren
+    vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+  </section>
+
   <!-- ===================================================== ENGLISH -->
   <section class="lang" id="en" lang="en">
     <h2>Privacy Policy</h2>
@@ -122,6 +142,8 @@
 
     <h2>Who is responsible</h2>
     <p>Joost Mispagel<br>
+    Lachnerstraße 11<br>
+    76131 Karlsruhe, Germany<br>
     Email: <a href="mailto:joost.mispagel@gmail.com">joost.mispagel@gmail.com</a></p>
 
     <h2>In short</h2>
@@ -193,6 +215,22 @@
     <h2>Changes</h2>
     <p>If the app changes so that it processes more data, this policy will be
     updated first.</p>
+  </section>
+
+  <section class="lang" id="imprint" lang="en">
+    <h2>Imprint</h2>
+    <p class="muted">Information under § 5 DDG (German Digital Services Act)</p>
+    <p>Joost Mispagel<br>
+    Lachnerstraße 11<br>
+    76131 Karlsruhe<br>
+    Germany</p>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:joost.mispagel@gmail.com">joost.mispagel@gmail.com</a></p>
+
+    <h2>Consumer dispute resolution</h2>
+    <p>I am neither willing nor obliged to take part in dispute resolution
+    proceedings before a consumer arbitration board.</p>
   </section>
 </main>
 </body>
